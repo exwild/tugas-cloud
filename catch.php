@@ -13,8 +13,8 @@ if(isset($_POST)){
 			       		$encryption_key, $options, $encryption_iv);
 
 	$servername = 'localhost';
-	$username = 'root';
-	$password = '';
+	$username = 'cloud';
+	$password = 'ubaya';
 	$dbname = 'tugasisadb';
 
 	$conn = new mysqli($servername, $username, $password, $dbname);

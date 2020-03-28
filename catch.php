@@ -12,7 +12,7 @@ if(isset($_POST)){
 	$encrypt = openssl_encrypt($plaintext, $ciphering, 
 			       		$encryption_key, $options, $encryption_iv);
 
-	$servername = 'localhost';
+	$servername = getenv('MYSQL_SERVICE_HOST');
 	$username = 'root';
 	$password = 'ubaya';
 	$dbname = 'tugasisadb';

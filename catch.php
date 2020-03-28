@@ -17,7 +17,7 @@ if(isset($_POST)){
 	$password = 'ubaya';
 	$dbname = 'tugasisadb';
 
-	$conn = new mysqli($servername, $username, $password, $dbname);
+	$conn = new mysqli_connect($servername, $username, $password, $dbname);
 
 	if ($conn->connect_error) {
 	    die("Connection failed: " . $conn->connect_error);
@@ -28,7 +28,6 @@ if(isset($_POST)){
 	$result = $conn->query($sql);
 
 	if ($result->num_rows > 0) {
-	    // output data of each row
 	    while($row = $result->fetch_assoc()) {
 		echo "id: " . $row["id"]. " - Name: " . $row["username"]. " - Password: " . $row["password"]. "<br>";
 	    }

@@ -12,10 +12,10 @@ if(isset($_POST)){
 	$encrypt = openssl_encrypt($plaintext, $ciphering, 
 			       		$encryption_key, $options, $encryption_iv);
 
-	$servername = "127.0.0.1";
-	$username = "cloud";
-	$password = "1234";
-	$dbname = "tugasisa";
+	$servername = '127.0.0.1';
+	$username = 'root';
+	$password = '';
+	$dbname = 'tugasisa';
 
 	$conn = new mysqli($servername, $username, $password, $dbname);
 

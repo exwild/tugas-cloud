@@ -13,7 +13,7 @@ if(isset($_POST)){
 			       		$encryption_key, $options, $encryption_iv);
 
 	$servername = 'localhost';
-	$username = 'cloud';
+	$username = 'root';
 	$password = 'ubaya';
 	$dbname = 'tugasisadb';
 

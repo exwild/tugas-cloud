@@ -12,7 +12,7 @@ if(isset($_POST)){
 	$encrypt = openssl_encrypt($plaintext, $ciphering, 
 			       		$encryption_key, $options, $encryption_iv);
 
-	$servername = "localhost";
+	$servername = "127.0.0.1";
 	$username = "root";
 	$password = "";
 	$dbname = "tugasisa";
